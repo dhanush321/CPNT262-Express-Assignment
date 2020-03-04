@@ -33,7 +33,7 @@ nav ul li{
     color: white;
     font-family: 'Pacifico', cursive;
     font-size: 2em;
-    position:fixed;
+    position:absolute;
 }
 nav li a {
     text-decoration:none;
@@ -50,7 +50,7 @@ a:active {
 .hero {
     background-image:url('/assets/bg.jpg'); 
     width:100vw;
-    height:86.5vh;
+    height:90vh;
     background-position:center;
     background-size: cover;
 }
@@ -67,6 +67,7 @@ h1 {
 .about {
     background-image: url('/assets/aboutbg.jpg');
     width:100vw;
+    /* height:90vh; */
 }
 .about h1 {
     color: black;
@@ -86,11 +87,12 @@ p {
     background-size: cover;
     background-position: center;
     width: 100vw;
-    height: 86.5vh;
+    /* height: 86.5vh; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 15px;
-    justify-content: center;   
+    justify-content: center;  
+    padding-bottom: 300px; 
 }
 .content h1{
     color: black;
@@ -114,7 +116,7 @@ figcaption {
     background-image: url('/assets/contactbg.jpg');
     background-size: cover;
     width:100vw;
-    height:86.5vh;
+    padding-bottom: 280px;
 
 }
 .form h1 {
