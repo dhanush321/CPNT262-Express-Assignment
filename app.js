@@ -1,8 +1,14 @@
 const path = require('path');
 const express = require('express');
 const ejs = require('ejs');
+const moment = require('moment');
 const pageInfo = require('./pageInfo');
 const app = express();
+
+app.use(function(req, res, next) {
+  year = (moment().format('YYYY'));
+  next();
+});
 
 app.set('view engine','ejs');
 
