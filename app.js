@@ -5,6 +5,7 @@ const moment = require('moment');
 const pageInfo = require('./pageInfo');
 const app = express();
 
+// Moment module to set Year in footer
 app.use(function(req, res, next) {
   year = (moment().format('YYYY'));
   next();
